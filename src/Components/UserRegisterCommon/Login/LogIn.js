@@ -23,9 +23,13 @@ const LogIn = () => {
 
           <p className="text-center text-[#F91944]">
             New in Red Onion?{" "}
-            <Link className="hover:underline" to="/signup">
+            <Link className="hover:underline underline-offset-1" to="/signup">
               Sign Up for free
             </Link>
+          </p>
+
+          <p className="text-center mt-1 mb-2 text-[#F91944]">
+            <button className="hover:underline underline-offset-1">Forgot Your Password?</button>
           </p>
         </form>
 
