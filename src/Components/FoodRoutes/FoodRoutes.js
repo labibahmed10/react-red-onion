@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { NavLink, Outlet, useNavigate, useParams } from "react-router-dom";
 import Breakfast from "../FoodPages/Breakfast";
-import Common from "../FoodPages/Common";
+import MealDetails from "../FoodPages/MealDetails";
 import Dinner from "../FoodPages/Dinner";
 import Lunch from "../FoodPages/Lunch";
 

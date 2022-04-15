@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import FoodRoutes from "../FoodRoutes/FoodRoutes";
 import "./HomePage.css";
+import { FoodContext } from "../../App";
 
 const HomePage = () => {
+  const [foods, setFoods] = useContext(FoodContext);
+
+  useEffect(() => {
+    fetch("foodsdata.json")
+      .then((res) => res.json())
+      .then((data) => setFoods(data));
+  }, []);
+
   return (
     <div>
       <div className="background">
