@@ -1,0 +1,147 @@
+[
+  {
+    "id": 1,
+    "name": "Bagel and Cream Cheese",
+    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "price": "6.99",
+    "image": "https://i.ibb.co/fdw9qNy/breakfast1.png",
+    "code": "breakfast"
+  },
+  {
+    "id": 2,
+    "name": "Breakfast Sandwich",
+    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "price": "8.99",
+    "image": "https://i.ibb.co/2KhVHLr/breakfast2.png",
+    "code": "breakfast"
+  },
+
+  {
+    "id": 3,
+    "name": "Baked Chicken",
+    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "price": "10.99",
+    "image": "https://i.ibb.co/4PMTFqN/breakfast3.png",
+    "code": "breakfast"
+  },
+  {
+    "id": 4,
+    "name": "Eggs Bendict",
+    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "price": "8.99",
+    "image": "https://i.ibb.co/0cKZRtV/breakfast4.png",
+    "code": "breakfast"
+  },
+  {
+    "id": 5,
+    "name": "Toast Croissant Fried Egg",
+    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "price": "15.99",
+    "image": "https://i.ibb.co/80pSMRX/breakfast5.png",
+    "code": "breakfast"
+  },
+  {
+    "id": 6,
+    "name": "Fried Egg Toast Brunch",
+    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "price": "12.99",
+    "image": "https://i.ibb.co/4fBWrsd/breakfast6.png",
+    "code": "breakfast"
+  },
+  {
+    "id": 7,
+    "name": "Fried Chicken Beans",
+    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "price": "12.99",
+    "image": "https://i.ibb.co/V9PBdMF/dinner1.png",
+    "code": "lunch"
+  },
+  {
+    "id": 8,
+    "name": "Healthy Meal Plan",
+    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "price": "14.99",
+    "image": "https://i.ibb.co/jV6h0kG/dinner2.png",
+    "code": "lunch"
+  },
+  {
+    "id": 9,
+    "name": "Tarragon-Rubbed-Salmon",
+    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "price": "15.99",
+    "image": "https://i.ibb.co/kSp1nrj/dinner3.png",
+    "code": "lunch"
+  },
+  {
+    "id": 10,
+    "name": "Indian Lunch",
+    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "price": "22.99",
+    "image": "https://i.ibb.co/b1B22B1/dinner4.png",
+    "code": "lunch"
+  },
+  {
+    "id": 11,
+    "name": "Beef Steak",
+    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "price": "19.99",
+    "image": "https://i.ibb.co/F7yW2wR/dinner5.png",
+    "code": "lunch"
+  },
+  {
+    "id": 12,
+    "name": "Honey-Soy Salmon",
+    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "price": "25.99",
+    "image": "https://i.ibb.co/ZWkpL6Z/dinner6.png",
+    "code": "lunch"
+  },
+  {
+    "id": 13,
+    "name": "Salmon With Grapefruit and Lentil",
+    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "price": "12.99",
+    "image": "https://i.ibb.co/K2n2Xft/lunch1.png",
+    "code": "dinner"
+  },
+  {
+    "id": 14,
+    "name": "Lemony Salmon Picatta",
+    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "price": "10.99",
+    "image": "https://i.ibb.co/sPZVkg6/lunch2.png",
+    "code": "dinner"
+  },
+  {
+    "id": 15,
+    "name": "Pork Tendelorin WIth Pilaf",
+    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "price": "29.99",
+    "image": "https://i.ibb.co/PDq0QXx/lunch3.png",
+    "code": "dinner"
+  },
+  {
+    "id": 16,
+    "name": "Frech With Cheese",
+    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "price": "18.99",
+    "image": "https://i.ibb.co/CJhx50s/lunch4.png",
+    "code": "dinner"
+  },
+  {
+    "id": 17,
+    "name": "Garlic Butter Baked Salmon",
+    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "price": "13.99",
+    "image": "https://i.ibb.co/rH3C2Mr/lunch5.png",
+    "code": "dinner"
+  },
+  {
+    "id": 18,
+    "name": "Baked Chicken",
+    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "price": "17.99",
+    "image": "https://i.ibb.co/Lnn45T1/lunch6.png",
+    "code": "dinner"
+  }
+]
