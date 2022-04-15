@@ -1,32 +1,29 @@
 import React, { useContext } from "react";
 import { useLocation, useParams } from "react-router-dom";
 import { FoodContext } from "../../App";
-const Breakfast = () => {
-  const location = useLocation();
-  const breakfastFood = location?.pathname.slice(1, 20);
-  console.log(breakfastFood);
+import SingleFood from "./SingleFood";
+
+const FoodCategory = () => {
   const [foods, setFoods] = useContext(FoodContext);
-  console.log(foods);
+  const { category } = useParams();
+  console.log(category);
+  // const location = useLocation();
+  // const category = location?.pathname.slice(6, 20);
 
+  const filtered = foods.filter((item) => item.category === category);
   return (
     <div>
-      {foods.map((item) => {
-        if (item?.code === breakfastFood) {
-          return <Filtered item={item}></Filtered>;
-        }
-      })}
+      <div className="grid grid-cols-3 place-items-center gap-10">
+        {filtered.map((item) => (
+          <SingleFood key={item.id} item={item}></SingleFood>
+        ))}
+      </div>
+
+      <button className="block mx-auto my-16 py-3 px-4 text-[aliceblue] rounded-2xl bg-[#F91944]">
+        Checkout Your Food
+      </button>
     </div>
   );
 };
 
-const Filtered = ({ item }) => {
-  const { image, name, price } = item;
-  console.log(name);
-  return (
-    <div>
-      <h1>{name}</h1>
-    </div>
-  );
-};
-
-export default Breakfast;
+export default FoodCategory;

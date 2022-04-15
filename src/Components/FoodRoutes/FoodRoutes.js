@@ -1,37 +1,35 @@
-import React, { useEffect } from "react";
-import { NavLink, Outlet, useNavigate, useParams } from "react-router-dom";
-import Breakfast from "../FoodPages/Breakfast";
-import MealDetails from "../FoodPages/MealDetails";
-import Dinner from "../FoodPages/Dinner";
-import Lunch from "../FoodPages/Lunch";
+import React, { useContext, useEffect } from "react";
+import { NavLink, Outlet, useLocation, useNavigate, useParams } from "react-router-dom";
+import { FoodContext } from "../../App";
 
 const FoodRoutes = () => {
   return (
     <div>
-      <div className="flex justify-center space-x-10 my-16 font-semibold">
+      <div className="flex justify-center space-x-10 my-16 font-semibold text-xl">
         <NavLink
           className={({ isActive }) =>
             isActive ? "text-red-400 underline underline-offset-4" : "text-sky-500"
           }
-          to="breakfast"
+          to="/home/breakfast"
         >
           Breakfast
         </NavLink>
         <NavLink
-          className={({ isActive }) => (isActive ? "text-red-400 underline-offset-4" : "text-sky-500 ")}
-          to="lunch"
+          className={({ isActive }) =>
+            isActive ? "text-red-400 underline underline-offset-4" : "text-sky-500 "
+          }
+          to="/home/lunch"
         >
           Lunch
         </NavLink>
         <NavLink
-          className={({ isActive }) => (isActive ? "text-red-400 underline-offset-4" : "text-sky-500")}
-          to="dinner"
+          className={({ isActive }) =>
+            isActive ? "text-red-400 underline underline-offset-4" : "text-sky-500"
+          }
+          to="/home/dinner"
         >
           Dinner
         </NavLink>
-      </div>
-      <div className="h-[85vh]">
-        <Outlet></Outlet>
       </div>
     </div>
   );

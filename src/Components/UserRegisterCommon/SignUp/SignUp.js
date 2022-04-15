@@ -11,17 +11,25 @@ import Loading from "../Loading/Loading";
 const SignUp = () => {
   const nameRef = useRef();
   const emailRef = useRef();
-  const conPassRef = useRef();
   const passwordRef = useRef();
+  const conPassRef = useRef();
   const navigate = useNavigate();
 
-  const [createUserWithEmailAndPassword, user, loading, error] = useCreateUserWithEmailAndPassword(auth);
+  const [createUserWithEmailAndPassword, user, loading, error] = useCreateUserWithEmailAndPassword(auth, {
+    sendEmailVerification: true,
+  });
 
   const handleSignUpSubmit = (event) => {
     event.preventDefault();
     const email = emailRef.current.value;
     const password = passwordRef.current.value;
     const conPassword = conPassRef.current.value;
+
+    if (!email || !password) {
+      return toast.error("Please Fill Up the Form!", {
+        autoClose: 2000,
+      });
+    }
 
     if (password.length < 8) {
       toast.warn("Too short Password!", {
@@ -43,12 +51,14 @@ const SignUp = () => {
   if (loading) {
     return <Loading></Loading>;
   }
+
   if (user) {
     navigate("/login");
   }
 
   return (
     <div className="w-[28rem] mx-auto">
+      <p>labib.ahmed.372@gmail.com</p>
       <div>
         <img className="w-56 object-contain mx-auto mt-24" src={logo} alt="" />
       </div>
@@ -85,6 +95,7 @@ const SignUp = () => {
             name="conPass"
             placeholder="Confirm Password"
           />
+          
           {error ? <p className="text-red-500">{error?.message}</p> : ""}
           <input type="submit" className="w-full bg-[#F91944] py-3 my-2 text-[aliceblue]" value="Sign Up" />
 

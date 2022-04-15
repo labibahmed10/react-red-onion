@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, useParams } from "react-router-dom";
 import FoodRoutes from "../FoodRoutes/FoodRoutes";
 import "./HomePage.css";
 import { FoodContext } from "../../App";
@@ -8,7 +8,7 @@ const HomePage = () => {
   const [foods, setFoods] = useContext(FoodContext);
 
   useEffect(() => {
-    fetch("foodsdata.json")
+    fetch("/foodsdata.json")
       .then((res) => res.json())
       .then((data) => setFoods(data));
   }, []);
@@ -24,7 +24,7 @@ const HomePage = () => {
             name="search"
             id="search"
             placeholder="Search for food items.."
-            className="w-96 p-3 rounded-full focus:outline-0"
+            className="w-96 py-3 px-4 rounded-full focus:outline-0"
           />
           <input
             type="submit"
@@ -34,6 +34,7 @@ const HomePage = () => {
         </div>
       </div>
       <FoodRoutes></FoodRoutes>
+      <Outlet></Outlet>
     </div>
   );
 };
