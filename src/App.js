@@ -2,9 +2,7 @@ import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./Components/HomePage/HomePage";
-import FoodCategory from "./Components/FoodPages/Breakfast";
-import Lunch from "./Components/FoodPages/Lunch";
-import Dinner from "./Components/FoodPages/Dinner";
+import FoodCategory from "./Components/FoodPages/FoodCategory";
 import { createContext, useState } from "react";
 
 import SignUp from "./Components/UserRegisterCommon/SignUp/SignUp";

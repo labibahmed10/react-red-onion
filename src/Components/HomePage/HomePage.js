@@ -3,6 +3,7 @@ import { Outlet, useParams } from "react-router-dom";
 import FoodRoutes from "../FoodRoutes/FoodRoutes";
 import "./HomePage.css";
 import { FoodContext } from "../../App";
+import WhyChooseUs from "../WhyChooseUs/WhyChooseUs";
 
 const HomePage = () => {
   const [foods, setFoods] = useContext(FoodContext);
@@ -35,6 +36,7 @@ const HomePage = () => {
       </div>
       <FoodRoutes></FoodRoutes>
       <Outlet></Outlet>
+      <WhyChooseUs></WhyChooseUs>
     </div>
   );
 };

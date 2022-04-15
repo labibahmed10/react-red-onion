@@ -6,9 +6,8 @@ import SingleFood from "./SingleFood";
 const FoodCategory = () => {
   const [foods, setFoods] = useContext(FoodContext);
   const { category } = useParams();
-  console.log(category);
+
   // const location = useLocation();
-  // const category = location?.pathname.slice(6, 20);
 
   const filtered = foods.filter((item) => item.category === category);
   return (

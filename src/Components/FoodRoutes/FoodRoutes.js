@@ -1,6 +1,5 @@
-import React, { useContext, useEffect } from "react";
-import { NavLink, Outlet, useLocation, useNavigate, useParams } from "react-router-dom";
-import { FoodContext } from "../../App";
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 const FoodRoutes = () => {
   return (
