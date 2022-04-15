@@ -7,6 +7,7 @@ import { createContext, useState } from "react";
 
 import SignUp from "./Components/UserRegisterCommon/SignUp/SignUp";
 import LogIn from "./Components/UserRegisterCommon/Login/LogIn";
+import Footer from "./Components/Footer/Footer";
 
 export const FoodContext = createContext();
 
@@ -25,6 +26,8 @@ function App() {
           <Route path="/signup" element={<SignUp></SignUp>}></Route>
         </Routes>
       </FoodContext.Provider>
+
+      <Footer></Footer>
     </div>
   );
 }
