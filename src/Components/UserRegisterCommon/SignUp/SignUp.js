@@ -22,9 +22,7 @@ const SignUp = () => {
     const email = emailRef.current.value;
     const password = passwordRef.current.value;
     const conPassword = conPassRef.current.value;
-    console.log(email);
-    console.log(password);
-    console.log(conPassword);
+
     if (password.length < 8) {
       toast.warn("Too short Password!", {
         position: "top-center",
@@ -45,7 +43,6 @@ const SignUp = () => {
   if (loading) {
     return <Loading></Loading>;
   }
-
   if (user) {
     navigate("/login");
   }
@@ -88,8 +85,8 @@ const SignUp = () => {
             name="conPass"
             placeholder="Confirm Password"
           />
-
-          <input type="submit" className="w-full bg-[#F91944] py-3 my-2 text-[aliceblue]" />
+          {error ? <p className="text-red-500">{error?.message}</p> : ""}
+          <input type="submit" className="w-full bg-[#F91944] py-3 my-2 text-[aliceblue]" value="Sign Up" />
 
           <p className="text-center text-[#F91944]">
             Already Have an Account?{" "}
