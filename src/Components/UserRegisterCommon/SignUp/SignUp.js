@@ -1,9 +1,55 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useRef } from "react";
+import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { Link, useNavigate } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import auth from "../../../firebase.init";
 import logo from "../../../images/logo2.png";
 import CommonSignIn from "../CommonSignIn/CommonSignIn";
+import Loading from "../Loading/Loading";
 
 const SignUp = () => {
+  const nameRef = useRef();
+  const emailRef = useRef();
+  const conPassRef = useRef();
+  const passwordRef = useRef();
+  const navigate = useNavigate();
+
+  const [createUserWithEmailAndPassword, user, loading, error] = useCreateUserWithEmailAndPassword(auth);
+
+  const handleSignUpSubmit = (event) => {
+    event.preventDefault();
+    const email = emailRef.current.value;
+    const password = passwordRef.current.value;
+    const conPassword = conPassRef.current.value;
+    console.log(email);
+    console.log(password);
+    console.log(conPassword);
+    if (password.length < 8) {
+      toast.warn("Too short Password!", {
+        position: "top-center",
+        autoClose: 2000,
+      });
+    }
+    if (password !== conPassword) {
+      toast.error("Password Did Not Matched!", {
+        position: "top-center",
+        autoClose: 2000,
+      });
+      return;
+    } else {
+      createUserWithEmailAndPassword(email, password);
+    }
+  };
+
+  if (loading) {
+    return <Loading></Loading>;
+  }
+
+  if (user) {
+    navigate("/login");
+  }
+
   return (
     <div className="w-[28rem] mx-auto">
       <div>
@@ -11,19 +57,35 @@ const SignUp = () => {
       </div>
 
       <div className="mt-12 px-8">
-        <form action="">
-          <input className="w-full bg-slate-200 mb-3 py-4 px-3 mx-auto" type="text" placeholder="Name" />
-
-          <input className="w-full bg-slate-200 mb-3 py-4 px-3 mx-auto" type="email" placeholder="Email" />
+        <form action="" onSubmit={handleSignUpSubmit}>
+          <input
+            ref={nameRef}
+            className="w-full bg-slate-200 mb-3 py-4 px-3 mx-auto"
+            type="text"
+            placeholder="Name"
+          />
 
           <input
+            ref={emailRef}
             className="w-full bg-slate-200 mb-3 py-4 px-3 mx-auto"
+            type="email"
+            placeholder="Email"
+            autoComplete="false"
+          />
+
+          <input
+            ref={passwordRef}
+            className="w-full bg-slate-200 mb-3 py-4 px-3 mx-auto"
+            name="password"
             type="password"
             placeholder="Password"
+            autoComplete="false"
           />
           <input
+            ref={conPassRef}
             className="w-full bg-slate-200 mb-3 py-4 px-3 mx-auto"
             type="password"
+            name="conPass"
             placeholder="Confirm Password"
           />
 
@@ -36,6 +98,7 @@ const SignUp = () => {
             </Link>
           </p>
         </form>
+        <ToastContainer theme="dark"></ToastContainer>
       </div>
       <CommonSignIn></CommonSignIn>
     </div>
