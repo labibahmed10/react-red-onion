@@ -36,8 +36,7 @@ const HomePage = () => {
       </div>
       <FoodRoutes></FoodRoutes>
       <Outlet></Outlet>
-
-      <WhyChooseUs></WhyChooseUs>
+      {/* <WhyChooseUs></WhyChooseUs> */}
     </div>
   );
 };

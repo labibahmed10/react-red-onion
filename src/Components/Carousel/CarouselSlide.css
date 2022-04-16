@@ -1,0 +1,10 @@
+.slick-next {
+  background-color: rgb(14, 14, 14);
+  right: 5px;
+  font-size: 30px;
+  background: none;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  opacity: 1;
+}

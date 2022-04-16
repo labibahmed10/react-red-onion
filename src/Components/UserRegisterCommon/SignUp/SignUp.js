@@ -57,7 +57,7 @@ const SignUp = () => {
   }
 
   return (
-    <div className="w-[28rem] mx-auto">
+    <div className="w-[28rem]  mx-auto">
       <p>labib.ahmed.372@gmail.com</p>
       <div>
         <img className="w-56 object-contain mx-auto mt-24" src={logo} alt="" />
@@ -95,7 +95,7 @@ const SignUp = () => {
             name="conPass"
             placeholder="Confirm Password"
           />
-          
+
           {error ? <p className="text-red-500">{error?.message}</p> : ""}
           <input type="submit" className="w-full bg-[#F91944] py-3 my-2 text-[aliceblue]" value="Sign Up" />
 

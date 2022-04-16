@@ -12,6 +12,7 @@ import FoodDetails from "./Components/FoodDetails/FoodDetails";
 import BreakFast from "./Components/FoodPages/BreakFast";
 import Lunch from "./Components/FoodPages/Lunch";
 import Dinner from "./Components/FoodPages/Dinner";
+import RequireAuth from "./Components/UserRegisterCommon/RequireAuth/RequireAuth";
 
 export const FoodContext = createContext();
 
@@ -27,9 +28,15 @@ function App() {
             <Route path="breakfast" element={<BreakFast></BreakFast>}></Route>
             <Route path="lunch" element={<Lunch></Lunch>}></Route>
             <Route path="dinner" element={<Dinner></Dinner>}></Route>
+            <Route
+              path="food-details/:details"
+              element={
+                <RequireAuth>
+                  <FoodDetails></FoodDetails>
+                </RequireAuth>
+              }
+            ></Route>
           </Route>
-
-          <Route path="/food-details/:details" element={<FoodDetails></FoodDetails>}></Route>
 
           <Route path="/login" element={<LogIn></LogIn>}></Route>
           <Route path="/signup" element={<SignUp></SignUp>}></Route>

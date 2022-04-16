@@ -14,7 +14,7 @@ const CommonSignIn = () => {
   const [signInWithTwitter, Tuser, Tloading, Terror] = useSignInWithTwitter(auth);
 
   return (
-    <div>
+    <div className="pb-16">
       <div className="flex items-center px-12 ">
         <hr className="w-1/2" />
         <p className="px-2">or</p>

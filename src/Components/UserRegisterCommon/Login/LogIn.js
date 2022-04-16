@@ -1,7 +1,7 @@
 import { async } from "@firebase/util";
 import React, { useRef } from "react";
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import auth from "../../../firebase.init";
@@ -14,8 +14,12 @@ const LogIn = () => {
   const passwordRef = useRef();
 
   const [signInWithEmailAndPassword, user, loading, error] = useSignInWithEmailAndPassword(auth);
-
   const [sendPasswordResetEmail, sending, Rerror] = useSendPasswordResetEmail(auth);
+
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const from = location?.state?.from?.pathname || "/";
 
   if (loading) {
     return <Loading></Loading>;
@@ -45,6 +49,9 @@ const LogIn = () => {
     await sendPasswordResetEmail(email);
   };
 
+  if (user) {
+    navigate(from, { replace: true });
+  }
   return (
     <div className="w-[28rem] mx-auto">
       <p>labib.ahmed.372@gmail.com</p>

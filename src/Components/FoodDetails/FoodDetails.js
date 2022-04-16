@@ -1,35 +1,42 @@
 import React, { useContext } from "react";
-import { useLocation, useParams } from "react-router-dom";
+import { Outlet, useLocation, useParams } from "react-router-dom";
 import { FoodContext } from "../../App";
-import FoodRoutes from "../FoodRoutes/FoodRoutes";
+
+import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
+import CarouselSlide from "../Carousel/CarouselSlide";
 
 const FoodDetails = () => {
   const [foods, setFoods] = useContext(FoodContext);
-  // const location = useLocation();
-  // const product = location.pathname.slice(6, 20);
-  // console.log(foods);
   const { details } = useParams();
-  console.log(foods);
+  const food = foods.find((item) => item.id === +details);
+  console.log(food);
 
   return (
     <div>
-      <FoodRoutes></FoodRoutes>
-      <div>
-        {foods.filter((item) => {
-          if (item.id === +details) {
-            return <FoodDetail item={item}></FoodDetail>;
-          }
-        })}
+      <div className="flex px-36 pb-16 gap-3 justify-between">
+        <div className="w-[45rem]">
+          <h1 className="text-5xl font-semibold py-8">{food?.name}</h1>
+          <h2 className="leading-[2rem] text-gray-500">{food?.text}</h2>
+
+          <div className="my-4 flex ">
+            <h4 className="text-4xl font-semibold pr-16">${food?.price}</h4>
+
+            <div className="flex items-center space-x-4 px-3 py-2 border-2 rounded-full">
+              <AiOutlineMinus className="hover:text-[#F91944]"></AiOutlineMinus>
+              <p>0</p>
+              <AiOutlinePlus className="hover:text-[#F91944]"></AiOutlinePlus>
+            </div>
+          </div>
+
+          <button className="px-4 py-2 mt-2 bg-[#F91944] rounded-full text-[aliceblue]">Add to Cart</button>
+
+          <CarouselSlide></CarouselSlide>
+        </div>
+
+        <div>
+          <img className="w-3/4 mx-auto" src={food?.image} alt="" />
+        </div>
       </div>
-    </div>
-  );
-};
-
-const FoodDetail = ({ item }) => {
-  const { text, name } = item;
-  return (
-    <div>
-      <h1>{name}</h1>
     </div>
   );
 };

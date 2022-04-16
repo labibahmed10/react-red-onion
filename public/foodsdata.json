@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Bagel and Cream Cheese",
-    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit Doloribus aliquam voluptates esse delectus minus modi perferendis dicta velit architecto enim neque repellendus mollitia saepe sapiente ducimus praesentium eaque cumque nihil.",
     "price": "6.99",
     "image": "https://i.postimg.cc/QMxV7yxv/breakfast1.png",
     "category": "breakfast"
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "name": "Breakfast Sandwich",
-    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit Doloribus aliquam voluptates esse delectus minus modi perferendis dicta velit architecto enim neque repellendus mollitia saepe sapiente ducimus praesentium eaque cumque nihil.",
     "price": "8.99",
     "image": "https://i.postimg.cc/NM2s7qhC/breakfast2.png",
     "category": "breakfast"
@@ -19,7 +19,7 @@
   {
     "id": 3,
     "name": "Baked Chicken",
-    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit Doloribus aliquam voluptates esse delectus minus modi perferendis dicta velit architecto enim neque repellendus mollitia saepe sapiente ducimus praesentium eaque cumque nihil.",
     "price": "10.99",
     "image": "https://i.postimg.cc/02RQnQyY/breakfast3.png",
     "category": "breakfast"
@@ -27,7 +27,7 @@
   {
     "id": 4,
     "name": "Eggs Bendict",
-    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit Doloribus aliquam voluptates esse delectus minus modi perferendis dicta velit architecto enim neque repellendus mollitia saepe sapiente ducimus praesentium eaque cumque nihil.",
     "price": "8.99",
     "image": "https://i.postimg.cc/jSRjVFNC/breakfast4.png",
     "category": "breakfast"
@@ -35,7 +35,7 @@
   {
     "id": 5,
     "name": "Toast Croissant Fried Egg",
-    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit Doloribus aliquam voluptates esse delectus minus modi perferendis dicta velit architecto enim neque repellendus mollitia saepe sapiente ducimus praesentium eaque cumque nihil.",
     "price": "15.99",
     "image": "https://i.postimg.cc/NjbjQk7D/breakfast5.png",
     "category": "breakfast"
@@ -43,7 +43,7 @@
   {
     "id": 6,
     "name": "Fried Egg Toast Brunch",
-    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit Doloribus aliquam voluptates esse delectus minus modi perferendis dicta velit architecto enim neque repellendus mollitia saepe sapiente ducimus praesentium eaque cumque nihil.",
     "price": "12.99",
     "image": "https://i.postimg.cc/pXfd6Hmg/breakfast6.png",
     "category": "breakfast"
@@ -51,7 +51,7 @@
   {
     "id": 7,
     "name": "Fried Chicken Beans",
-    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit Doloribus aliquam voluptates esse delectus minus modi perferendis dicta velit architecto enim neque repellendus mollitia saepe sapiente ducimus praesentium eaque cumque nihil.",
     "price": "12.99",
     "image": "https://i.postimg.cc/9QXcgq57/dinner1.png",
     "category": "lunch"
@@ -59,7 +59,7 @@
   {
     "id": 8,
     "name": "Healthy Meal Plan",
-    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit Doloribus aliquam voluptates esse delectus minus modi perferendis dicta velit architecto enim neque repellendus mollitia saepe sapiente ducimus praesentium eaque cumque nihil.",
     "price": "14.99",
     "image": "https://i.postimg.cc/3wcrvrqD/dinner2.png",
     "category": "lunch"
@@ -67,7 +67,7 @@
   {
     "id": 9,
     "name": "Tarragon-Rubbed-Salmon",
-    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit Doloribus aliquam voluptates esse delectus minus modi perferendis dicta velit architecto enim neque repellendus mollitia saepe sapiente ducimus praesentium eaque cumque nihil.",
     "price": "15.99",
     "image": "https://i.postimg.cc/HW7nb5dW/dinner3.png",
     "category": "lunch"
@@ -75,7 +75,7 @@
   {
     "id": 10,
     "name": "Indian Lunch",
-    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit Doloribus aliquam voluptates esse delectus minus modi perferendis dicta velit architecto enim neque repellendus mollitia saepe sapiente ducimus praesentium eaque cumque nihil.",
     "price": "22.99",
     "image": "https://i.postimg.cc/hPcnh7G5/dinner4.png",
     "category": "lunch"
@@ -83,7 +83,7 @@
   {
     "id": 11,
     "name": "Beef Steak",
-    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit Doloribus aliquam voluptates esse delectus minus modi perferendis dicta velit architecto enim neque repellendus mollitia saepe sapiente ducimus praesentium eaque cumque nihil.",
     "price": "19.99",
     "image": "https://i.postimg.cc/jqzKshRf/dinner5.png",
     "category": "lunch"
@@ -91,7 +91,7 @@
   {
     "id": 12,
     "name": "Honey-Soy Salmon",
-    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit Doloribus aliquam voluptates esse delectus minus modi perferendis dicta velit architecto enim neque repellendus mollitia saepe sapiente ducimus praesentium eaque cumque nihil.",
     "price": "25.99",
     "image": "https://i.postimg.cc/VLWYFWTw/dinner6.png",
     "category": "lunch"
@@ -99,7 +99,7 @@
   {
     "id": 13,
     "name": "Salmon With Grapefruit and Lentil",
-    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit Doloribus aliquam voluptates esse delectus minus modi perferendis dicta velit architecto enim neque repellendus mollitia saepe sapiente ducimus praesentium eaque cumque nihil.",
     "price": "12.99",
     "image": "https://i.postimg.cc/GhCLY5Xz/lunch1.png",
     "category": "dinner"
@@ -107,7 +107,7 @@
   {
     "id": 14,
     "name": "Lemony Salmon Picatta",
-    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit Doloribus aliquam voluptates esse delectus minus modi perferendis dicta velit architecto enim neque repellendus mollitia saepe sapiente ducimus praesentium eaque cumque nihil.",
     "price": "10.99",
     "image": "https://i.postimg.cc/Z5f4GK4D/lunch2.png",
     "category": "dinner"
@@ -115,7 +115,7 @@
   {
     "id": 15,
     "name": "Pork Tendelorin WIth Pilaf",
-    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit Doloribus aliquam voluptates esse delectus minus modi perferendis dicta velit architecto enim neque repellendus mollitia saepe sapiente ducimus praesentium eaque cumque nihil.",
     "price": "29.99",
     "image": "https://i.postimg.cc/VNdmmQNs/lunch3.png",
     "category": "dinner"
@@ -123,7 +123,7 @@
   {
     "id": 16,
     "name": "Frech With Cheese",
-    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit Doloribus aliquam voluptates esse delectus minus modi perferendis dicta velit architecto enim neque repellendus mollitia saepe sapiente ducimus praesentium eaque cumque nihil.",
     "price": "18.99",
     "image": "https://i.postimg.cc/PxDHvWZB/lunch4.png",
     "category": "dinner"
@@ -131,7 +131,7 @@
   {
     "id": 17,
     "name": "Garlic Butter Baked Salmon",
-    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit Doloribus aliquam voluptates esse delectus minus modi perferendis dicta velit architecto enim neque repellendus mollitia saepe sapiente ducimus praesentium eaque cumque nihil.",
     "price": "13.99",
     "image": "https://i.postimg.cc/RhzB7WLq/lunch5.png",
     "category": "dinner"
@@ -139,7 +139,7 @@
   {
     "id": 18,
     "name": "Baked Chicken",
-    "text": "Lorem ipsum dolor sit amet consectetur.",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit Doloribus aliquam voluptates esse delectus minus modi perferendis dicta velit architecto enim neque repellendus mollitia saepe sapiente ducimus praesentium eaque cumque nihil.",
     "price": "17.99",
     "image": "https://i.postimg.cc/prYtqPsC/lunch6.png",
     "category": "dinner"
