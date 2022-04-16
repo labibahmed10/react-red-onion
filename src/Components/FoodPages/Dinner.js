@@ -1,15 +1,12 @@
 import React, { useContext } from "react";
-import { useLocation, useParams } from "react-router-dom";
+import { Outlet, useParams } from "react-router-dom";
 import { FoodContext } from "../../App";
 import SingleFood from "./SingleFood";
 
-const FoodCategory = () => {
+const Dinner = () => {
   const [foods, setFoods] = useContext(FoodContext);
   const { category } = useParams();
-
-  // const location = useLocation();
-
-  const filtered = foods.filter((item) => item.category === category);
+  const filtered = foods.filter((item) => item.category === "lunch");
   return (
     <div>
       <div className="grid grid-cols-3 place-items-center gap-10">
@@ -25,4 +22,4 @@ const FoodCategory = () => {
   );
 };
 
-export default FoodCategory;
+export default Dinner;

@@ -32,7 +32,7 @@ const WhyChooseUs = () => {
 
       <div className="grid grid-cols-3 gap-8">
         {chooseInfo.map((item) => (
-          <SingleChooseUs item={item}></SingleChooseUs>
+          <SingleChooseUs key={item.id} item={item}></SingleChooseUs>
         ))}
       </div>
     </div>

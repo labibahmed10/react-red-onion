@@ -2,12 +2,16 @@ import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./Components/HomePage/HomePage";
-import FoodCategory from "./Components/FoodPages/FoodCategory";
+import FoodCategory from "./Components/FoodPages/Lunch";
 import { createContext, useState } from "react";
 
 import SignUp from "./Components/UserRegisterCommon/SignUp/SignUp";
 import LogIn from "./Components/UserRegisterCommon/Login/LogIn";
 import Footer from "./Components/Footer/Footer";
+import FoodDetails from "./Components/FoodDetails/FoodDetails";
+import BreakFast from "./Components/FoodPages/BreakFast";
+import Lunch from "./Components/FoodPages/Lunch";
+import Dinner from "./Components/FoodPages/Dinner";
 
 export const FoodContext = createContext();
 
@@ -18,10 +22,15 @@ function App() {
       <Navbar></Navbar>
       <FoodContext.Provider value={[foods, setFoods]}>
         <Routes>
-          <Route path="/" element={<HomePage></HomePage>}></Route>
           <Route path="/home" element={<HomePage></HomePage>}>
-            <Route path=":category" element={<FoodCategory></FoodCategory>}></Route>
+            <Route index element={<BreakFast></BreakFast>}></Route>
+            <Route path="breakfast" element={<BreakFast></BreakFast>}></Route>
+            <Route path="lunch" element={<Lunch></Lunch>}></Route>
+            <Route path="dinner" element={<Dinner></Dinner>}></Route>
           </Route>
+
+          <Route path="/food-details/:details" element={<FoodDetails></FoodDetails>}></Route>
+
           <Route path="/login" element={<LogIn></LogIn>}></Route>
           <Route path="/signup" element={<SignUp></SignUp>}></Route>
         </Routes>

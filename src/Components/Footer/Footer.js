@@ -6,10 +6,10 @@ const Footer = () => {
     <div className="bg-[#161414] p-10  text-[#bfc3c7] text-sm">
       <div className="grid grid-cols-2 pb-20">
         <div>
-          <img className="w-32" src={logo} alt="" />
+          <img className="w-40" src={logo} alt="" />
         </div>
 
-        <div className="flex justify-between ">
+        <div className="flex justify-evenly ">
           <div className="leading-[1.5rem]">
             <p>All Online Food</p>
             <p>Read Our Blog</p>
