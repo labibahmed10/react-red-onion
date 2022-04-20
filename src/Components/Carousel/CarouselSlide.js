@@ -6,6 +6,8 @@ import Slider from "react-slick/lib/slider";
 import image1 from "../..//images/breakfast/breakfast1.png";
 import image2 from "../../images/lunch/lunch2.png";
 import image3 from "../../images/dinner/dinner1.png";
+import image4 from "../../images/dinner/dinner5.png";
+
 import "./CarouselSlide.css";
 const CarouselSlide = () => {
   const settings = {
@@ -28,6 +30,9 @@ const CarouselSlide = () => {
         </div>
         <div>
           <img src={image3} alt="" />
+        </div>
+        <div>
+          <img src={image4} alt="" />
         </div>
       </Slider>
     </div>
